@@ -6,13 +6,10 @@ public class LogException
 {
     public static void LogExceptions(Exception ex)
     {
-        // Log write File 
         LogToFil(ex.Message);
 
-        // Log write Console
         LogToConsole(ex.Message);
 
-        // Log write Dubugger
         LogToDebugger(ex.Message);
     }
 

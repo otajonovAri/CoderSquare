@@ -11,10 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DIContainer\" />
+    <Folder Include="MappingProfiles\" />
     <Folder Include="Responses\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
     <PackageReference Include="Serilog" Version="4.3.0" />
