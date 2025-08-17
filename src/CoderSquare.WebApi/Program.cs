@@ -1,11 +1,20 @@
+using AutoMapper;
+using CoderSquare.Application.DIContainer;
+using CoderSquare.Application.MappingProfiles;
 using CoderSquare.DataAccess.DIContainer;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 
-builder.Services.AddDatabase(builder.Configuration);
+builder.Services
+    .AddDatabase(builder.Configuration)
+    .AddServiceApp(builder.Configuration);
 
+
+// Mapper 
+//builder.Services.AddAutoMapper(ProblemProfile);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

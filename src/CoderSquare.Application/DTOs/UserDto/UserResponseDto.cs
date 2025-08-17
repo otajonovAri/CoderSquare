@@ -1,4 +1,4 @@
-﻿namespace CoderSquare.Application.DTOs.User;
+﻿namespace CoderSquare.Application.DTOs.UserDto;
 
 public class UserResponseDto
 {

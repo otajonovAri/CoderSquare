@@ -1,4 +1,4 @@
-﻿using CoderSquare.Application.DTOs.User;
+﻿using CoderSquare.Application.DTOs.UserDto;
 using FluentValidation;
 
 namespace CoderSquare.Application.Validators.UserValidator;

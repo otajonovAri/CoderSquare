@@ -22,8 +22,4 @@
     <ProjectReference Include="..\CoderSquare.Application\CoderSquare.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
