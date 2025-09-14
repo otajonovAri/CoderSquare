@@ -12,12 +12,14 @@
 
   <ItemGroup>
     <Folder Include="DIContainer\" />
-    <Folder Include="MappingProfiles\" />
     <Folder Include="Responses\" />
+    <Folder Include="Service\TypeServices\" />
+    <Folder Include="Validators\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />

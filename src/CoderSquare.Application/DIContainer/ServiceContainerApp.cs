@@ -1,5 +1,6 @@
-﻿using CoderSquare.Application.Repositories.ProblemRepository;
+﻿using CoderSquare.Application.MappingProfiles;
 using CoderSquare.Application.Service.ProblemServices;
+using CoderSquare.Application.Service.TypeServices;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,8 +12,8 @@ public static class ServiceContainerApp
         IConfiguration configuration)
     {
         // AddService Container
-        service.AddScoped<IProblemRepository , ProblemRepository>();
-        service.AddScoped<IProblemService , ProblemService>();
+        service.AddScoped<IProblemService, ProblemService>();
+        service.AddScoped<ITypeService, TypeService>();
 
         return service;
     }
